@@ -23,7 +23,7 @@ $("#submitBtn").on("click", function(event){
 
     var newTrain=$("#trainNameInput").val().trim();
     var newDest=$("#destinationInput").val().trim();
-    var firstTrain=moment($("#firstTrainTime").val().trim(), "HH:mm").valueOf();;
+    var firstTrain=moment($("#firstTrainTime").val().trim(), "HH:mm").valueOf();
     var newFreq=parseInt($("#frquency").val().trim());
   
     var nTrain={
@@ -39,10 +39,10 @@ $("#submitBtn").on("click", function(event){
 
     //  here consoles the logs
 
-    // console.log(nTrain.trainName);
-    // console.log(nTrain.trainDestination);
-    // console.log(nTrain.firsttrain);
-    // console.log(nTrain.frequency);
+    console.log(nTrain.trainName);
+    console.log(nTrain.trainDestination);
+    console.log(nTrain.firsttrain);
+    console.log(nTrain.frequency);
 
     alert("Train Successfully Added")
 
